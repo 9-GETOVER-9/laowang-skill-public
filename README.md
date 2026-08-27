@@ -64,6 +64,8 @@ cases/
 
 </details>
 
+维护者如需吸收新语料或修复客户反馈问题，请阅读 [维护与更新](MAINTENANCE.md)。每次 push 和 Pull Request 都会自动执行 public-safe 边界检查。
+
 ---
 
 ## 功能矩阵
@@ -136,6 +138,8 @@ laowang-skill-public/
 │   └── research/                    # public-safe 研究摘要
 ├── cases/                           # 可复用公开案例
 ├── evaluations/                     # 路由矩阵与测试输出
+├── scripts/validate_public_release.py # 公开边界自动检查
+├── MAINTENANCE.md                    # 新语料与 Bug 修复流程
 ├── NOTICE.md
 └── LICENSE
 ```

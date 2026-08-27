@@ -10,3 +10,5 @@ Before pushing this repository to GitHub:
 - [x] Confirm the README disclaimer says this is independent and not official/endorsed.
 - [x] Keep MIT license for this public package.
 - [x] Create the GitHub repository from `laowang-skill-public`, not from the private research directory.
+- [x] Run `python scripts/validate_public_release.py` locally and in GitHub Actions.
+- [ ] Add or update a regression case for each customer-reported behavior bug.
