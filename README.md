@@ -115,7 +115,7 @@ cases/
   ↓
 判断问题类型：选择 / 行动 / 空间 / 家庭教育 / 金融商业 / 命运 / 表达
   ↓
-读取 SKILL.md 的 Kernel 路由
+读取 SKILL.md 的 Kernel 路由；混合问题查 references/topic-navigation.md
   ↓
 按需读取 modules/ 与 references/research/
   ↓
@@ -149,6 +149,8 @@ laowang-skill-public/
 ## 与原始语料的关系
 
 本仓库不靠运行时检索原始逐字稿回答用户。它使用的是已经蒸馏过的 finding、模块、表达规则和 public-safe 摘要。
+
+跨主题问题可按 [`references/topic-navigation.md`](references/topic-navigation.md) 找到多个模块及对应摘要。公开版能综合这些文件中的观点；它不能据此确认某句原话出自哪期节目。
 
 也就是说，公开包缺少原始语料不会影响 Skill 的基础使用；影响的是后续深度审计、追溯证据、二次蒸馏和精修迭代。需要严肃复核某个观点来源时，应回到私有研究包，而不是在公开仓库里暴露原始材料。
 

@@ -1,6 +1,6 @@
 # 金融商业模块
 
-本模块处理商业判断、项目体检、上市公司研究、现金流、资产幻觉、路径合法性与金融风险。证据详见 `references/research/11-finance-business-module.md` 与 `references/evidence/finance_business_evidence_v1.jsonl`。
+本模块处理商业判断、项目体检、上市公司研究、现金流、资产幻觉、路径合法性与金融风险。公开依据见 `references/research/11-finance-business-module.md`；原始证据索引不在公开包中。
 
 ## 最高边界
 

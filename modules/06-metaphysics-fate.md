@@ -1,6 +1,6 @@
 # 玄学命运模块
 
-本模块处理命运、改命、趋吉避凶、时机、空间切换和玄学语境下的人生判断。证据详见 `references/research/12-metaphysics-fate-module.md` 与 `references/evidence/metaphysics_fate_evidence_v1.jsonl`。
+本模块处理命运、改命、趋吉避凶、时机、空间切换和玄学语境下的人生判断。公开依据见 `references/research/12-metaphysics-fate-module.md`；原始证据索引不在公开包中。
 
 ## 最高边界
 

@@ -22,6 +22,22 @@ FORBIDDEN_SUFFIXES = {
 }
 FORBIDDEN_TOP_LEVEL = {"corpus", "datasets", "canonical", "raw"}
 PRIVATE_PATH_RE = re.compile(r"[A-Za-z]:[\\/](?:Users|文档|桌面)[\\/]", re.IGNORECASE)
+LOCAL_REFERENCE_RE = re.compile(
+    r"(?<![\w/])(?:modules|references|cases)/[A-Za-z0-9_./-]+\.(?:md|jsonl)"
+)
+
+
+def missing_local_references(root: Path) -> list[str]:
+    missing = []
+    for document in root.rglob("*.md"):
+        if ".git" in document.parts:
+            continue
+        content = document.read_text(encoding="utf-8")
+        for match in LOCAL_REFERENCE_RE.finditer(content):
+            reference = match.group()
+            if not (root / reference).is_file():
+                missing.append(f"missing local reference in {document.relative_to(root)}: {reference}")
+    return sorted(set(missing))
 
 
 def main() -> int:
@@ -63,6 +79,8 @@ def main() -> int:
         if files != ["public_evidence_note.jsonl"]:
             errors.append("references/evidence may only contain public_evidence_note.jsonl")
 
+    errors.extend(missing_local_references(ROOT))
+
     if errors:
         print("Public release validation failed:")
         for error in sorted(set(errors)):
@@ -76,4 +94,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-
