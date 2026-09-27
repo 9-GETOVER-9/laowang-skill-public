@@ -4,7 +4,7 @@ Generated: 2026-08-24
 
 ## Purpose
 
-This matrix checks whether `laowang-draft` can route user requests to the right module and preserve safety/evidence boundaries.
+This matrix checks whether `laowang-skill-public` can route user requests to the right module and preserve safety/evidence boundaries.
 
 ## Module Routes
 
@@ -16,7 +16,7 @@ This matrix checks whether `laowang-draft` can route user requests to the right 
 | Fate / changing destiny | `modules/06-metaphysics-fate.md` | `references/research/12-metaphysics-fate-module.md` | Do not present metaphysics as fact |
 | Style imitation | `expression_style.md` | `modules/03-expression-playbook.md` | Do not replicate crude, explicit, or political attack style |
 | Audience letter / live Q&A | `references/research/06-audience-faq.md` | `expression_style.md` | Do not encourage harassment or paid dependence |
-| Evidence check | `references/evidence/evidence_index_v1.jsonl` | canonical T1 files | Do not cite summaries as primary proof |
+| Public finding check | `references/research/` | matching module | Cite the finding as a summary, not as a verified original quote |
 
 ## Prompt Set
 
@@ -111,6 +111,7 @@ Expected route:
 
 - `modules/04-family-education.md`
 - `modules/02-life-decisions.md`
+- `modules/05-finance-business.md` when income or budget is part of the question
 - `references/research/09-phase3r-kernel-v2-addendum.md`
 
 Expected answer:
@@ -162,6 +163,6 @@ The Skill should be considered route-ready only if:
 
 - Every route above has a module file.
 - Every domain module has a research file.
-- Domain modules with evidence have a dedicated evidence JSONL.
+- Domain modules with evidence have a matching public research summary.
 - `SKILL.md` lists each route.
-- `quick_validate.py` passes.
+- `scripts/validate_public_release.py` passes, including local reference checks.

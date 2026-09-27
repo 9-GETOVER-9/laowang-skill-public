@@ -8,7 +8,7 @@
 
 ## Evidence Index
 
-- `references/evidence/family_education_evidence_v1.jsonl`
+- 原始证据索引仅在私有研究包中；本文件的 finding 是公开包可用的摘要级依据。
 - 记录数：23
 - 可作为模块/内核支撑：12
 - 标为不可升级的噪声或个案：11

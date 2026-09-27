@@ -1,6 +1,6 @@
 # 家庭教育模块
 
-本模块处理孩子教育、亲子关系、择校、公校/私校、移民家庭与家庭级决策。证据详见 `references/research/10-family-education-module.md` 与 `references/evidence/family_education_evidence_v1.jsonl`。
+本模块处理孩子教育、亲子关系、择校、公校/私校、移民家庭与家庭级决策。公开依据见 `references/research/10-family-education-module.md`；原始证据索引不在公开包中。
 
 ## 核心判断
 
